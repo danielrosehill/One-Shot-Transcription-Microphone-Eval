@@ -1,5 +1,22 @@
 # Microphone Audio Samples for STT Evaluation
 
+[![View PDF Report](https://img.shields.io/badge/📄_PDF_Report-View_Benchmark-blue?style=for-the-badge)](device-images/composites/eval-20251223/microphone-stt-benchmark.pdf)
+[![View Infographic](https://img.shields.io/badge/📊_Infographic-WER_Rankings-green?style=for-the-badge)](device-images/composites/eval-20251223/infographic-wer-ranked.png)
+[![View by Category](https://img.shields.io/badge/📈_Chart-By_Category-orange?style=for-the-badge)](device-images/composites/eval-20251223/microphones-by-category.png)
+[![Spectrograms](https://img.shields.io/badge/🔊_Spectrograms-Audio_Analysis-purple?style=for-the-badge)](spectrograms/spectrograms_ranked_by_wer.png)
+[![Spectrogram PDF](https://img.shields.io/badge/📑_All_Spectrograms-PDF_Collection-darkviolet?style=for-the-badge)](spectrograms/spectrograms_collection.pdf)
+[![Price Analysis](https://img.shields.io/badge/💰_Price-Correlation-red?style=for-the-badge)](spectrograms/price_vs_wer_analysis.png)
+
+---
+
+## Key Takeaway
+
+**Microphone quality matters less than environment for STT accuracy.** In this benchmark of 15 recordings across 10 microphones, most devices clustered within a narrow 4-6% Word Error Rate (WER) range. The biggest differentiator wasn't price or specifications—a $30 USB gooseneck mic matched or beat $150+ headsets. The same smartphone showed 50% higher error rates in a noisy market compared to a quiet room. For speech-to-text work, *any* decent microphone in a quiet space outperforms expensive gear in poor acoustic conditions.
+
+All audio samples are **untreated raw recordings**—no noise reduction, normalization, or post-processing applied.
+
+---
+
 ## Results (Single Transcription)
 
 ![alt text](device-images/composites/eval-20251223/infographic-wer-ranked.png)
@@ -27,23 +44,23 @@ All transcriptions performed using OpenAI Whisper API (whisper-1) in a single ev
 
 ## Microphones Tested
 
-| ID | Microphone | Type | Category | Connection | Notes |
-|----|------------|------|----------|------------|-------|
-| 1 | UGreen CM564 | USB Gooseneck | Desktop | USB-A | 30cm distance |
-| 2 | Samson Q2U | Dynamic USB/XLR | Desktop | USB mini | 30cm distance |
-| 3 | Logitech H390 | USB Headset | Headset | USB wired | Overhead mic |
-| 4 | OnePlus Nord 3 5G | Smartphone built-in | Mobile | N/A | ASR HQ recording |
-| 5 | OnePlus Nord 3 5G | Smartphone built-in | Mobile | N/A | Voicenotes.com (MP3) |
-| 6 | Audio-Technica ATR4697 | Boundary Mic | Desktop | USB-A | 30cm distance |
-| 7 | Audio-Technica ATR4697 | Boundary Mic | Desktop | USB-A | 80cm (long throw) |
-| 8 | Jabra Speak 510 | USB Speakerphone | Desktop | USB | Conference device |
-| 9 | Logitech C925e | Webcam built-in | Desktop | USB | 30cm distance |
-| 10 | Maono Elf | Lavalier | Lavalier | USB-A | Wired lav |
-| 11 | Yealink BH72 | Wireless Headset | Headset | USB Dongle | BT51 dongle |
-| 12 | Yealink BH72 | Wireless Headset | Headset | Bluetooth | TP-Link UB500 |
-| 13 | Audio-Technica ATR4750-USB | Condenser Gooseneck | Desktop | USB-A | Omnidirectional |
-| 14 | OnePlus Nord 3 5G | Smartphone built-in | Mobile | N/A | Noisy (Mahane Yehuda) |
-| 15 | OnePlus Nord 3 5G | Smartphone built-in | Mobile | N/A | Quiet (home office) |
+| ID | Microphone | Type | Category | Price (USD) | Notes |
+|----|------------|------|----------|-------------|-------|
+| 1 | UGreen CM564 | USB Gooseneck | Desktop | ~$18 | 30cm distance |
+| 2 | Samson Q2U | Dynamic USB/XLR | Desktop | ~$70 | 30cm distance |
+| 3 | Logitech H390 | USB Headset | Headset | ~$30 | Overhead mic |
+| 4 | OnePlus Nord 3 5G | Smartphone built-in | Mobile | — | ASR HQ recording |
+| 5 | OnePlus Nord 3 5G | Smartphone built-in | Mobile | — | Voicenotes.com (MP3) |
+| 6 | Audio-Technica ATR4697 | Boundary Mic | Desktop | ~$45 | 30cm distance |
+| 7 | Audio-Technica ATR4697 | Boundary Mic | Desktop | ~$45 | 80cm (long throw) |
+| 8 | Jabra Speak 510 | USB Speakerphone | Desktop | ~$110 | Conference device |
+| 9 | Logitech C925e | Webcam built-in | Desktop | ~$75 | 30cm distance |
+| 10 | Maono Elf | Lavalier | Lavalier | ~$25 | Wired lav |
+| 11 | Yealink BH72 | Wireless Headset | Headset | ~$160 | BT51 dongle |
+| 12 | Yealink BH72 | Wireless Headset | Headset | ~$160 | TP-Link UB500 |
+| 13 | Audio-Technica ATR4750-USB | Condenser Gooseneck | Desktop | ~$55 | Omnidirectional |
+| 14 | OnePlus Nord 3 5G | Smartphone built-in | Mobile | — | Noisy (Mahane Yehuda) |
+| 15 | OnePlus Nord 3 5G | Smartphone built-in | Mobile | — | Quiet (home office) |
 
 ## STT Evaluation Results
 
@@ -104,6 +121,44 @@ Quality score (0-100) based on technical audio metrics including SNR, dynamic ra
 
 6. **Most Microphones Perform Similarly**: The majority of microphones clustered around 5.40% WER, suggesting that for typical quiet office use, microphone choice has less impact than environmental factors.
 
+## Price vs Accuracy Analysis
+
+![Price vs WER Correlation](spectrograms/price_vs_wer_analysis.png)
+
+**Counter-intuitive finding: More expensive microphones showed slightly *worse* STT accuracy.**
+
+| Price Tier | Samples | Avg WER | Best Performer |
+|------------|---------|---------|----------------|
+| Budget ($0-30) | 3 | 5.19% | UGreen CM564 (4.44%) |
+| Mid-range ($31-80) | 5 | 5.46% | Audio-Technica ATR4697 (4.76%) |
+| Premium ($80+) | 3 | 5.82% | Jabra Speak 510 (5.40%) |
+
+**Correlation Statistics** (phone samples excluded, n=11):
+- Pearson r = **0.540** (weak positive correlation—higher price, higher error rate)
+- p-value = 0.086 (not statistically significant at α=0.05)
+
+This suggests that for STT applications, expensive microphones don't provide meaningful accuracy benefits over budget options in quiet environments. The $18 UGreen gooseneck outperformed the $160 Yealink headset.
+
+## Spectral Analysis
+
+Spectrograms were generated for all 15 samples to visualize frequency characteristics and explore correlations with WER. All recordings are **untreated raw audio**—no noise reduction, normalization, or processing applied.
+
+![Spectrograms Ranked by WER](spectrograms/spectrograms_ranked_by_wer.png)
+
+### Audio Feature Correlations
+
+| Feature | Correlation with WER | Interpretation |
+|---------|---------------------|----------------|
+| Spectral Bandwidth | r = -0.516 (p=0.049) | Wider bandwidth → lower error rate |
+| Harmonic Ratio | r = -0.443 (p=0.098) | Cleaner voice signal → lower error rate |
+| Speech Clarity Ratio | r = +0.393 (p=0.147) | Complex relationship |
+
+Individual spectrograms for each microphone are available in the [spectrograms/](spectrograms/) directory, showing:
+- Full frequency spectrum (0-8kHz, speech range)
+- Mel spectrogram (perceptual frequency scale)
+- Spectral features over time (centroid, rolloff)
+- Key audio metrics (harmonic ratio, speech band energy)
+
 ## Repository Structure
 
 ```
@@ -113,15 +168,31 @@ Quality score (0-100) based on technical audio metrics including SNR, dynamic ra
 ├── metadata.json               # Recording metadata for each sample
 ├── evaluation_results.json     # Full evaluation data
 ├── evaluate.py                 # Evaluation script
+├── generate_spectrograms.py    # Spectrogram & audio feature analysis
+├── price_analysis.py           # Price vs WER correlation analysis
 ├── device-images/
 │   ├── originals/              # Microphone product photos
 │   └── composites/             # Generated graphics
+├── spectrograms/               # Audio analysis outputs
+│   ├── spectrogram_*.png       # Individual spectrograms per sample
+│   ├── spectrograms_collection.pdf  # All spectrograms in PDF (landscape)
+│   ├── spectrograms_ranked_by_wer.png
+│   ├── correlation_analysis.png
+│   ├── price_vs_wer_analysis.png
+│   ├── analysis_report.md      # Detailed analysis findings
+│   └── audio_features.csv      # Extracted features data
 └── microphones/                # Detailed microphone documentation
 ```
 
 ## Downloads
 
 - [PDF Report](device-images/composites/eval-20251223/microphone-stt-benchmark.pdf) - Complete visual benchmark report
+- [Spectrograms PDF Collection](spectrograms/spectrograms_collection.pdf) - All 18 spectrograms in landscape format (one per page)
+- [Spectrograms Grid](spectrograms/spectrograms_ranked_by_wer.png) - All 15 spectrograms ranked by WER
+- [Price Correlation Chart](spectrograms/price_vs_wer_analysis.png) - Price vs accuracy analysis
+- [Audio Feature Correlations](spectrograms/correlation_analysis.png) - Feature correlation scatter plots
+- [Analysis Report](spectrograms/analysis_report.md) - Detailed audio feature analysis findings
+- [Audio Features CSV](spectrograms/audio_features.csv) - Raw extracted audio features data
 
 ## License
 

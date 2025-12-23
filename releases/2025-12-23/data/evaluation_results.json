@@ -1,0 +1,808 @@
+{
+  "summary": {
+    "total_samples": 15,
+    "reference_text_words": 315,
+    "transcription_service": "OpenAI Whisper API (whisper-1)",
+    "evaluation_date": "2025-12-23",
+    "methodology": "Single transcription service for all samples to ensure methodological consistency"
+  },
+  "rankings": {
+    "by_audio_quality": [
+      {
+        "rank": 1,
+        "sample_id": 14,
+        "microphone": "OnePlus Nord 3 5G",
+        "category": "mobile",
+        "score": 89.0
+      },
+      {
+        "rank": 2,
+        "sample_id": 11,
+        "microphone": "Yealink BH72",
+        "category": "headset",
+        "score": 85.0
+      },
+      {
+        "rank": 3,
+        "sample_id": 12,
+        "microphone": "Yealink BH72",
+        "category": "headset",
+        "score": 85.0
+      },
+      {
+        "rank": 4,
+        "sample_id": 4,
+        "microphone": "OnePlus Nord 3 5G",
+        "category": "mobile",
+        "score": 84.5
+      },
+      {
+        "rank": 5,
+        "sample_id": 5,
+        "microphone": "OnePlus Nord 3 5G (assumed)",
+        "category": "mobile",
+        "score": 83.0
+      },
+      {
+        "rank": 6,
+        "sample_id": 2,
+        "microphone": "Samson Q2U",
+        "category": "desktop",
+        "score": 80.0
+      },
+      {
+        "rank": 7,
+        "sample_id": 8,
+        "microphone": "Jabra Speak 510",
+        "category": "desktop",
+        "score": 80.0
+      },
+      {
+        "rank": 8,
+        "sample_id": 15,
+        "microphone": "OnePlus Nord 3 5G",
+        "category": "mobile",
+        "score": 79.5
+      },
+      {
+        "rank": 9,
+        "sample_id": 9,
+        "microphone": "Logitech C925e",
+        "category": "desktop",
+        "score": 75.0
+      },
+      {
+        "rank": 10,
+        "sample_id": 10,
+        "microphone": "Maono Elf",
+        "category": "lavalier",
+        "score": 75.0
+      },
+      {
+        "rank": 11,
+        "sample_id": 3,
+        "microphone": "Logitech H390",
+        "category": "headset",
+        "score": 74.0
+      },
+      {
+        "rank": 12,
+        "sample_id": 1,
+        "microphone": "UGreen CM564",
+        "category": "desktop",
+        "score": 70.0
+      },
+      {
+        "rank": 13,
+        "sample_id": 6,
+        "microphone": "Audio-Technica ATR4697",
+        "category": "desktop",
+        "score": 70.0
+      },
+      {
+        "rank": 14,
+        "sample_id": 13,
+        "microphone": "Audio-Technica ATR4750-USB",
+        "category": "desktop",
+        "score": 70.0
+      },
+      {
+        "rank": 15,
+        "sample_id": 7,
+        "microphone": "Audio-Technica ATR4697",
+        "category": "desktop",
+        "score": 57.0
+      }
+    ],
+    "by_wer": [
+      {
+        "rank": 1,
+        "sample_id": 15,
+        "microphone": "OnePlus Nord 3 5G",
+        "category": "mobile",
+        "wer_percent": 4.13
+      },
+      {
+        "rank": 2,
+        "sample_id": 1,
+        "microphone": "UGreen CM564",
+        "category": "desktop",
+        "wer_percent": 4.44
+      },
+      {
+        "rank": 3,
+        "sample_id": 7,
+        "microphone": "Audio-Technica ATR4697",
+        "category": "desktop",
+        "wer_percent": 4.76
+      },
+      {
+        "rank": 4,
+        "sample_id": 2,
+        "microphone": "Samson Q2U",
+        "category": "desktop",
+        "wer_percent": 5.4
+      },
+      {
+        "rank": 5,
+        "sample_id": 5,
+        "microphone": "OnePlus Nord 3 5G (assumed)",
+        "category": "mobile",
+        "wer_percent": 5.4
+      },
+      {
+        "rank": 6,
+        "sample_id": 6,
+        "microphone": "Audio-Technica ATR4697",
+        "category": "desktop",
+        "wer_percent": 5.4
+      },
+      {
+        "rank": 7,
+        "sample_id": 8,
+        "microphone": "Jabra Speak 510",
+        "category": "desktop",
+        "wer_percent": 5.4
+      },
+      {
+        "rank": 8,
+        "sample_id": 9,
+        "microphone": "Logitech C925e",
+        "category": "desktop",
+        "wer_percent": 5.4
+      },
+      {
+        "rank": 9,
+        "sample_id": 10,
+        "microphone": "Maono Elf",
+        "category": "lavalier",
+        "wer_percent": 5.4
+      },
+      {
+        "rank": 10,
+        "sample_id": 3,
+        "microphone": "Logitech H390",
+        "category": "headset",
+        "wer_percent": 5.71
+      },
+      {
+        "rank": 11,
+        "sample_id": 4,
+        "microphone": "OnePlus Nord 3 5G",
+        "category": "mobile",
+        "wer_percent": 5.71
+      },
+      {
+        "rank": 12,
+        "sample_id": 11,
+        "microphone": "Yealink BH72",
+        "category": "headset",
+        "wer_percent": 6.03
+      },
+      {
+        "rank": 13,
+        "sample_id": 12,
+        "microphone": "Yealink BH72",
+        "category": "headset",
+        "wer_percent": 6.03
+      },
+      {
+        "rank": 14,
+        "sample_id": 14,
+        "microphone": "OnePlus Nord 3 5G",
+        "category": "mobile",
+        "wer_percent": 6.03
+      },
+      {
+        "rank": 15,
+        "sample_id": 13,
+        "microphone": "Audio-Technica ATR4750-USB",
+        "category": "desktop",
+        "wer_percent": 6.35
+      }
+    ]
+  },
+  "category_analysis": {
+    "desktop": {
+      "samples": [
+        1,
+        2,
+        6,
+        7,
+        8,
+        9,
+        13
+      ],
+      "avg_quality": 71.71428571428571,
+      "avg_wer": 0.05306122448979592
+    },
+    "headset": {
+      "samples": [
+        3,
+        11,
+        12
+      ],
+      "avg_quality": 81.33333333333333,
+      "avg_wer": 0.05925925925925926
+    },
+    "mobile": {
+      "samples": [
+        4,
+        5,
+        14,
+        15
+      ],
+      "avg_quality": 84.0,
+      "avg_wer": 0.05317460317460317
+    },
+    "lavalier": {
+      "samples": [
+        10
+      ],
+      "avg_quality": 75.0,
+      "avg_wer": 0.05396825396825397
+    }
+  },
+  "detailed_results": [
+    {
+      "sample_id": 1,
+      "filename": "samples/1.wav",
+      "microphone": {
+        "manufacturer": "UGreen",
+        "model": "CM564",
+        "type": "USB Gooseneck",
+        "category": "desktop",
+        "subcategory": "gooseneck"
+      },
+      "audio_metrics": {
+        "duration_seconds": 123.06576,
+        "sample_rate": 44100,
+        "channels": 2,
+        "bit_depth": 16,
+        "codec": "pcm_s16le",
+        "bitrate_kbps": 1411.205,
+        "peak_amplitude_db": -1.8,
+        "rms_level_db": -25.1,
+        "estimated_snr_db": 15.211526,
+        "dynamic_range_db": 38.511526,
+        "silence_ratio": 0.32814123333333334,
+        "clipping_ratio": 0
+      },
+      "audio_quality_score": 70.0,
+      "transcriptions": [
+        {
+          "service": "openai_whisper_1",
+          "text": "The history of coffee is surprisingly complex and spans several centuries across multiple continents. Originally discovered in Ethiopia, the coffee plant made its way through Yemen and into the broader Middle East before eventually reaching Europe in the 17th century. Early European reactions to coffee were mixed. Some religious authorities initially condemned it as a Muslim drink, while others embraced its ability to keep people alert during long working hours. Coffee houses quickly became centres of intellectual discourse, earning them the nickname penny universities because anyone could join the conversation for the price of a cup. The Dutch were among the first Europeans to cultivate coffee outside of Arabia, establishing plantations in their colonial territories. This broke the Arabian monopoly on coffee production and eventually led to the global industry we know today. Brazil now produces roughly one third of the world's coffee supply, followed by Vietnam and Colombia. Modern coffee culture has evolved significantly from its origins. Speciality coffee roasters focus on single origin beans, careful roasting profiles and precise brewing methods. Terms like pour-over, cold brew and third wave have entered common vocabulary. Meanwhile, instant coffee remains popular in many countries for its convenience. The science behind coffee extraction involves balancing temperature, grind size, water quality and contact time. Too fine a grind leads to over extraction and bitterness, while too coarse results in weak, sour flavours. Water temperature between 90 and 96 degrees Celsius is generally considered optimal. Caffeine content varies widely depending on brewing method and bean variety. A typical espresso shot contains less total caffeine than a large drip coffee, despite tasting much stronger. Robusta beans contain nearly twice the caffeine of Arabica, but are considered inferior in flavour. Whether enjoyed as a morning ritual or an afternoon pick-me-up, coffee remains one of the most widely consumed beverages on earth, second only to water and tea.",
+          "wer": 0.044444444444444446,
+          "cer": 0.017484215638659543,
+          "processing_time_seconds": 36.43471026420593,
+          "run_date": "2025-12-23"
+        }
+      ]
+    },
+    {
+      "sample_id": 2,
+      "filename": "samples/2.wav",
+      "microphone": {
+        "manufacturer": "Samson",
+        "model": "Q2U",
+        "type": "Dynamic USB/XLR",
+        "category": "desktop",
+        "subcategory": "dynamic"
+      },
+      "audio_metrics": {
+        "duration_seconds": 118.282449,
+        "sample_rate": 44100,
+        "channels": 2,
+        "bit_depth": 16,
+        "codec": "pcm_s16le",
+        "bitrate_kbps": 1411.202,
+        "peak_amplitude_db": -3.2,
+        "rms_level_db": -24.9,
+        "estimated_snr_db": 25.236722,
+        "dynamic_range_db": 46.936721999999996,
+        "silence_ratio": 0.1643879666666667,
+        "clipping_ratio": 0
+      },
+      "audio_quality_score": 80.0,
+      "transcriptions": [
+        {
+          "service": "openai_whisper_1",
+          "text": "The history of coffee is surprisingly complex and spans several centuries across multiple continents. Originally discovered in Ethiopia, the coffee plant made its way through Yemen and into the broader Middle East before eventually reaching Europe in the 17th century. Early European reactions to coffee were mixed. Some religious authorities initially condemned it as a Muslim drink, while others embraced its ability to keep people alert during long working hours. Coffee houses quickly became centres of intellectual discourse, earning them the nickname penny universities because anyone could join a conversation for the price of a cup. The Dutch were among the first Europeans to cultivate coffee outside of Arabia, establishing plantations in their colonial territories. This broke the Arabian monopoly on coffee production and eventually led to the global industry we know today. Brazil now produces roughly one third of the world's coffee supply, followed by Vietnam and Colombia. Modern coffee culture has evolved significantly from its origins. Speciality coffee roasters focus on single-origin beans, careful roasting profiles, and precise brewing methods. Terms like pour-over, cold brew, and third wave have entered common vocabulary. Meanwhile, instant coffee remains popular in many countries for its convenience. The science behind coffee extraction involves balancing temperature, grind size, water quality, and contact time. Too fine a grind leads to over-extraction and bitterness, while too coarse results in weak sour flavours. Water temperature between 90 and 96 degrees Celsius is generally considered optimal. Caffeine content varies widely depending on brewing method and bean variety. A typical espresso shot contains less total caffeine than a large drip coffee, despite tasting much stronger. Robusta beans contain nearly twice the caffeine of Arabica, but are considered inferior in flavour. Whether enjoyed as a morning ritual or an afternoon pick-me-up, coffee remains one of the most widely consumed beverages on earth, second only to water and tea.",
+          "wer": 0.05396825396825397,
+          "cer": 0.016998542982030112,
+          "processing_time_seconds": 30.992753505706787,
+          "run_date": "2025-12-23"
+        }
+      ]
+    },
+    {
+      "sample_id": 3,
+      "filename": "samples/3.wav",
+      "microphone": {
+        "manufacturer": "Logitech",
+        "model": "H390",
+        "type": "USB Headset",
+        "category": "headset",
+        "subcategory": "wired"
+      },
+      "audio_metrics": {
+        "duration_seconds": 118.085079,
+        "sample_rate": 44100,
+        "channels": 1,
+        "bit_depth": 16,
+        "codec": "pcm_s16le",
+        "bitrate_kbps": 705.602,
+        "peak_amplitude_db": -0.8,
+        "rms_level_db": -28.3,
+        "estimated_snr_db": 21.389104999999997,
+        "dynamic_range_db": 48.889105,
+        "silence_ratio": 0.17184825000000004,
+        "clipping_ratio": 0.06666666666666665
+      },
+      "audio_quality_score": 74.0,
+      "transcriptions": [
+        {
+          "service": "openai_whisper_1",
+          "text": "The history of coffee is surprisingly complex and spans several centuries across multiple continents. Originally discovered in Ethiopia, the coffee plant made its way through Yemen and into the broader Middle East, before eventually reaching Europe in the 17th century. Early European reactions to coffee were mixed. Some religious authorities initially condemned it as a Muslim drink, while others embraced its ability to keep people alert during long working hours. Coffee houses quickly became centres of intellectual discourse, earning them the nickname Penny Universities because anyone could join a conversation for the price of a cup. The Dutch were among the first Europeans to cultivate coffee outside of Arabia, establishing plantations in their colonial territories. This broke the Arabian monopoly on coffee production and eventually led to the global industry we know today. Brazil now produces roughly one third of the world's coffee supply, followed by Vietnam and Colombia. Modern coffee culture has evolved significantly from its origins. Contemporary coffee roasters focus on single-origin beans, careful roasting profiles and precise brewing methods. Terms like pour-over, cold brew and third wave have entered common vocabulary. Meanwhile, instant coffee remains popular in many countries for its convenience. The science behind coffee extraction involves balancing temperature, grind size, water quality and contact time. Too fine a grind leads to over-extraction and bitterness, while too coarse results in weak sour flavours. Water temperature between 90 and 96 degrees Celsius is generally considered optimal. Caffeine content varies widely depending on brewing method and bean variety. A typical espresso shot contains less total caffeine than a large drip coffee, despite tasting much stronger. Robust beans contain nearly twice the caffeine of Arabica, but are considered inferior in flavour. Whether enjoyed as a morning ritual or an afternoon pick-me-up, coffee remains one of the most widely consumed beverages on earth, second only to water and tea.",
+          "wer": 0.05714285714285714,
+          "cer": 0.021855269548324428,
+          "processing_time_seconds": 21.9853937625885,
+          "run_date": "2025-12-23"
+        }
+      ]
+    },
+    {
+      "sample_id": 4,
+      "filename": "samples/4.wav",
+      "microphone": {
+        "manufacturer": "OnePlus",
+        "model": "Nord 3 5G",
+        "type": "Smartphone built-in",
+        "category": "mobile",
+        "subcategory": "smartphone"
+      },
+      "audio_metrics": {
+        "duration_seconds": 113.44,
+        "sample_rate": 44100,
+        "channels": 2,
+        "bit_depth": 16,
+        "codec": "pcm_s16le",
+        "bitrate_kbps": 1411.708,
+        "peak_amplitude_db": -0.9,
+        "rms_level_db": -19.0,
+        "estimated_snr_db": 26.067926,
+        "dynamic_range_db": 44.167926,
+        "silence_ratio": 0.2488679,
+        "clipping_ratio": 0.033333333333333326
+      },
+      "audio_quality_score": 84.5,
+      "transcriptions": [
+        {
+          "service": "openai_whisper_1",
+          "text": "The history of coffee is surprisingly complex and spans several centuries across multiple continents. Originally discovered in Ethiopia, the coffee plant made its way through Yemen and into the broader Middle East before eventually reaching Europe in the 17th century. Early European reactions to coffee were mixed. Some religious authorities initially condemned it as a Muslim drink, while others embraced its ability to keep people alert during long working hours. Coffee houses quickly became centres of intellectual discourse, earning them the nickname Penny Universities because anyone could join a conversation for the price of a cup. The Dutch were among the first Europeans to cultivate coffee outside of Arabia, establishing plantations in their colonial territories. This broke the Arabian monopoly on coffee production and eventually led to the global industry we know today. Brazil now produces roughly one third of the world's coffee supply, followed by Vietnam and Colombia. Modern coffee culture has evolved significantly from its origins. Early coffee roasters focus on single-origin beans, careful roasting profiles and precise brewing methods. Terms like pour-over, cold brew and third wave have entered common vocabulary. Meanwhile, instant coffee remains popular in many countries for its convenience. The science behind coffee extraction involves balancing temperature, grind size, water quality and contact time. Too fine a grind leads to over-extraction and bitterness, while too coarse results in weak sour flavours. Water temperature between 90 and 96 degrees Celsius is generally considered optimal. Caffeine content varies widely depending on brewing method and bean variety. A typical espresso shot contains less total caffeine than a large dripped coffee, despite tasting much stronger. Robusta beans contain nearly twice the caffeine of Arabica, but are considered inferior in flavour. Whether enjoyed as a morning ritual or an afternoon pick-me-up, coffee remains one of the most widely consumed beverages on earth, second only to water and tea.",
+          "wer": 0.05714285714285714,
+          "cer": 0.020883924235065566,
+          "processing_time_seconds": 33.04253077507019,
+          "run_date": "2025-12-23"
+        }
+      ]
+    },
+    {
+      "sample_id": 5,
+      "filename": "samples/5.mp3",
+      "microphone": {
+        "manufacturer": "OnePlus",
+        "model": "Nord 3 5G (assumed)",
+        "type": "Smartphone built-in",
+        "category": "mobile",
+        "subcategory": "smartphone"
+      },
+      "audio_metrics": {
+        "duration_seconds": 113.71102,
+        "sample_rate": 44100,
+        "channels": 2,
+        "bit_depth": null,
+        "codec": "mp3",
+        "bitrate_kbps": 192.056,
+        "peak_amplitude_db": -1.1,
+        "rms_level_db": -19.7,
+        "estimated_snr_db": 27.547615000000004,
+        "dynamic_range_db": 46.147615,
+        "silence_ratio": 0.21253974999999994,
+        "clipping_ratio": 0
+      },
+      "audio_quality_score": 83.0,
+      "transcriptions": [
+        {
+          "service": "openai_whisper_1",
+          "text": "The history of coffee is surprisingly complex and spans several centuries across multiple continents. Originally discovered in Ethiopia, the coffee plant made its way through Yemen and into the broader Middle East before eventually reaching Europe in the 17th century. Early European reactions to coffee were mixed. Some religious authorities initially condemned it as a Muslim drink, while others embraced its ability to keep people alert during long working hours. Coffee houses quickly became centres of intellectual discourse, earning them the nickname Penny Universities because anyone could join a conversation for the price of a cup. The Dutch were among the first Europeans to cultivate coffee outside of Arabia, establishing plantations in their colonial territories. This broke the Arabian monopoly on coffee production and eventually led to the global industry we know today. Brazil now produces roughly one third of the world's coffee supply, followed by Vietnam and Colombia. Modern coffee culture has evolved significantly from its origins. The coffee roasters focus on single-origin beans, careful roasting profiles and precise brewing methods. Terms like pour-over, cold brew and third wave have entered common vocabulary. Meanwhile, instant coffee remains popular in many countries for its convenience. The science behind coffee extraction involves balancing temperature, grind size, water quality and contact time. Too fine a grind leads to over-extraction and bitterness, while too coarse results in weak sour flavours. Water temperature between 90 and 96 degrees Celsius is generally considered optimal. Caffeine content varies widely depending on brewing method and bean variety. A typical espresso shot contains less total caffeine than a large drip coffee, despite tasting much stronger. Robusta beans contain nearly twice the caffeine of Arabica but are considered inferior in flavour. Whether enjoyed as a morning ritual or an afternoon pick-me-up, coffee remains one of the most widely consumed beverages on earth, second only to water and tea.",
+          "wer": 0.05396825396825397,
+          "cer": 0.020398251578436135,
+          "processing_time_seconds": 10.048696517944336,
+          "run_date": "2025-12-23"
+        }
+      ]
+    },
+    {
+      "sample_id": 6,
+      "filename": "samples/6.wav",
+      "microphone": {
+        "manufacturer": "Audio-Technica",
+        "model": "ATR4697",
+        "type": "Boundary Microphone",
+        "category": "desktop",
+        "subcategory": "boundary"
+      },
+      "audio_metrics": {
+        "duration_seconds": 117.032698,
+        "sample_rate": 44100,
+        "channels": 1,
+        "bit_depth": 16,
+        "codec": "pcm_s16le",
+        "bitrate_kbps": 705.603,
+        "peak_amplitude_db": -6.9,
+        "rms_level_db": -29.1,
+        "estimated_snr_db": 11.445520000000002,
+        "dynamic_range_db": 33.645520000000005,
+        "silence_ratio": 0.32424133333333327,
+        "clipping_ratio": 0
+      },
+      "audio_quality_score": 70.0,
+      "transcriptions": [
+        {
+          "service": "openai_whisper_1",
+          "text": "The history of coffee is surprisingly complex and spans several centuries across multiple continents. Originally discovered in Ethiopia, the coffee plant made its way through Yemen and into the broader Middle East before eventually reaching Europe in the 17th century. Early European reactions to coffee were mixed \u2013 some religious authorities initially condemned it as a Muslim drink, while others embraced its ability to keep people alert during long working hours. Coffee houses quickly became centres of intellectual discourse, earning them the nickname Penny Universities because anyone could join a conversation for the price of a cup. The Dutch were among the first Europeans to cultivate coffee outside of Arabia, establishing plantations in their colonial territories. This broke the Arabian monopoly on coffee production and eventually led to the global industry we know today. Brazil now produces roughly one third of the world's coffee supply, followed by Vietnam and Colombia. Modern coffee culture has evolved significantly from its origins. Speciality coffee roasters focus on single-origin beans, careful roasting profiles and precise brewing methods. Terms like pour-over, cold brew and third wave have entered common vocabulary. Meanwhile, instant coffee remains popular in many countries for its convenience. The science behind coffee extraction involves balancing temperature, grind size, water quality and contact time. Too fine a grind leads to over-extraction and bitterness, while too coarse results in weak sour flavours. Water temperature between 90 and 96 degrees Celsius is generally considered optimal. Caffeine content varies widely depending on brewing method and bean variety. A typical espresso shot contains less total caffeine than a large drip coffee, despite tasting much stronger. Robusta beans contain nearly twice the caffeine of Arabica, but are considered inferior in flavour. Whether enjoyed as a morning ritual or an afternoon pick-me-up, coffee remains one of the most widely consumed beverages on earth, second only to water and tea.",
+          "wer": 0.05396825396825397,
+          "cer": 0.016998542982030112,
+          "processing_time_seconds": 24.512516498565674,
+          "run_date": "2025-12-23"
+        }
+      ]
+    },
+    {
+      "sample_id": 7,
+      "filename": "samples/7.wav",
+      "microphone": {
+        "manufacturer": "Audio-Technica",
+        "model": "ATR4697",
+        "type": "Boundary Microphone",
+        "category": "desktop",
+        "subcategory": "boundary"
+      },
+      "audio_metrics": {
+        "duration_seconds": 116.370408,
+        "sample_rate": 44100,
+        "channels": 1,
+        "bit_depth": 16,
+        "codec": "pcm_s16le",
+        "bitrate_kbps": 705.603,
+        "peak_amplitude_db": -10.8,
+        "rms_level_db": -32.4,
+        "estimated_snr_db": 8.071314999999998,
+        "dynamic_range_db": 29.671314999999996,
+        "silence_ratio": 0.3254780833333334,
+        "clipping_ratio": 0
+      },
+      "audio_quality_score": 57.0,
+      "transcriptions": [
+        {
+          "service": "openai_whisper_1",
+          "text": "The history of coffee is surprisingly complex and spans several centuries across multiple continents. Originally discovered in Ethiopia, the coffee plant made its way through Yemen and into the broader Middle East before eventually reaching Europe in the 17th century. Early European reactions to coffee were mixed. Some religious authorities initially condemned it as a Muslim drink, while others embraced its ability to keep people alert during long working hours. Coffee houses quickly became centres of intellectual discourse, earning them the nickname penny universities because anyone could join a conversation for the price of a cup. The Dutch were among the first Europeans to cultivate coffee outside of Arabia, establishing plantations in their colonial territories. This broke the Arabian monopoly on coffee production and eventually led to the global industry we know today. Brazil now produces roughly one third of the world's coffee supply, followed by Vietnam and Colombia. Modern coffee culture has evolved significantly from its origins. Speciality coffee roasters focus on single-origin beans, careful roasting profiles and precise brewing methods. Terms like pour-over, cold brew and third wave have entered common vocabulary. Meanwhile, instant coffee remains popular in many countries for its convenience. The science behind coffee extraction involves balancing temperature, grind size, water quality and contact time. Too fine a grind leads to over extraction and bitterness, while too coarse results in weak sour flavours. Water temperature between 90 and 96 degrees Celsius is generally considered optimal. Caffeine content varies widely depending on brewing method and bean variety. A typical espresso shot contains less total caffeine than a large drip coffee, despite tasting much stronger. Robusta beans contain nearly twice the caffeine of Arabica, but are considered inferior in flavour. Whether enjoyed as a morning ritual or an afternoon pick-me-up, coffee remains one of the most widely consumed beverages on earth, second only to water and tea.",
+          "wer": 0.047619047619047616,
+          "cer": 0.01651287032540068,
+          "processing_time_seconds": 20.604857444763184,
+          "run_date": "2025-12-23"
+        }
+      ]
+    },
+    {
+      "sample_id": 8,
+      "filename": "samples/8.wav",
+      "microphone": {
+        "manufacturer": "Jabra",
+        "model": "Speak 510",
+        "type": "USB Speakerphone",
+        "category": "desktop",
+        "subcategory": "speakerphone"
+      },
+      "audio_metrics": {
+        "duration_seconds": 115.588639,
+        "sample_rate": 44100,
+        "channels": 1,
+        "bit_depth": 16,
+        "codec": "pcm_s16le",
+        "bitrate_kbps": 705.603,
+        "peak_amplitude_db": 0.0,
+        "rms_level_db": -18.6,
+        "estimated_snr_db": 24.093336,
+        "dynamic_range_db": 42.693336,
+        "silence_ratio": 0.2884444,
+        "clipping_ratio": 0.3333333333333333
+      },
+      "audio_quality_score": 80.0,
+      "transcriptions": [
+        {
+          "service": "openai_whisper_1",
+          "text": "The history of coffee is surprisingly complex and spans several centuries across multiple continents. Originally discovered in Ethiopia, the coffee plant made its way through Yemen and into the broader Middle East before eventually reaching Europe in the 17th century. Early European reactions to coffee were mixed. Some religious authorities initially condemned it as a Muslim drink while others embraced its ability to keep people alert during long working hours. Coffee houses quickly became centres of intellectual discourse, earning them the nickname penny universities because anyone could join a conversation for the price of a cup. The Dutch were among the first Europeans to cultivate coffee outside of Arabia, establishing plantations in their colonial territories. This broke the Arabian monopoly on coffee production and eventually led to the global industry we know today. Brazil now produces roughly one third of the world's coffee supply, followed by Vietnam and Colombia. Modern coffee culture has evolved significantly from its origins. Speciality coffee roasters focus on single-origin beans, careful roasting profiles and precise brewing methods. Terms like pour-over, cold brew and third wave have entered common vocabulary. Meanwhile, instant coffee remains popular in many countries for its convenience. The science behind coffee extraction involves balancing temperature, grind size, water quality and contact time. Too fine a grind leads to over-extraction and bitterness, while too coarse results in weak, sour flavours. Water temperature between 90 and 96 degrees Celsius is generally considered optimal. Caffeine content varies widely depending on brewing method and bean variety. A typical espresso shot contains less total caffeine than a large drip coffee, despite tasting much stronger. Robusta beans contain nearly twice the caffeine of Arabica but are considered inferior in flavour. Whether enjoyed as a morning ritual or an afternoon pick-me-up, coffee remains one of the most widely consumed beverages on earth, second only to water and tea.",
+          "wer": 0.05396825396825397,
+          "cer": 0.016998542982030112,
+          "processing_time_seconds": 19.245139122009277,
+          "run_date": "2025-12-23"
+        }
+      ]
+    },
+    {
+      "sample_id": 9,
+      "filename": "samples/9.wav",
+      "microphone": {
+        "manufacturer": "Logitech",
+        "model": "C925e",
+        "type": "Webcam built-in",
+        "category": "desktop",
+        "subcategory": "webcam"
+      },
+      "audio_metrics": {
+        "duration_seconds": 113.967211,
+        "sample_rate": 44100,
+        "channels": 1,
+        "bit_depth": 16,
+        "codec": "pcm_s16le",
+        "bitrate_kbps": 705.603,
+        "peak_amplitude_db": -2.1,
+        "rms_level_db": -24.2,
+        "estimated_snr_db": 16.619899,
+        "dynamic_range_db": 38.719899,
+        "silence_ratio": 0.31966835,
+        "clipping_ratio": 0
+      },
+      "audio_quality_score": 75.0,
+      "transcriptions": [
+        {
+          "service": "openai_whisper_1",
+          "text": "The history of coffee is surprisingly complex and spans several centuries across multiple continents. Originally discovered in Ethiopia, the coffee plant made its way through Yemen and into the broader Middle East before eventually reaching Europe in the 17th century. Early European reactions to coffee were mixed, some religious authorities initially condemned it as a Muslim drink while others embraced its ability to keep people alert during long working hours. Coffee houses quickly became centres of intellectual discourse, earning them the nickname penny universities because anyone could join a conversation for the price of a cup. The Dutch were among the first Europeans to cultivate coffee outside of Arabia, establishing plantations in their colonial territories. This broke the Arabian monopoly on coffee production and eventually led to the global industry we know today. Brazil now produces roughly one third of the world's coffee supply, followed by Vietnam and Colombia. Modern coffee culture has evolved significantly from its origins. Speciality coffee roasters focus on single-origin beans, careful roasting profiles and precise brewing methods. Terms like pour-over, cold brew and third wave have entered common vocabulary. Meanwhile, instant coffee remains popular in many countries for its convenience. The science behind coffee extraction involves balancing temperature, grind size, water quality and contact time. Too fine a grind leads to over-extraction and bitterness while too coarse results in weak sour flavours. Water temperature between 90 and 96 degrees Celsius is generally considered optimal. Caffeine content varies widely depending on brewing method and bean variety. A typical espresso shot contains less total caffeine than a large drip coffee, despite tasting much stronger. Robusta beans contain nearly twice the caffeine of arabica but are considered inferior in flavour. Whether enjoyed as a morning ritual or an afternoon pick-me-up, coffee remains one of the most widely consumed beverages on earth, second only to water and tea.",
+          "wer": 0.05396825396825397,
+          "cer": 0.016998542982030112,
+          "processing_time_seconds": 19.15451431274414,
+          "run_date": "2025-12-23"
+        }
+      ]
+    },
+    {
+      "sample_id": 10,
+      "filename": "samples/10.wav",
+      "microphone": {
+        "manufacturer": "Maono",
+        "model": "Elf",
+        "type": "Lavalier",
+        "category": "lavalier",
+        "subcategory": "wired"
+      },
+      "audio_metrics": {
+        "duration_seconds": 117.257982,
+        "sample_rate": 44100,
+        "channels": 1,
+        "bit_depth": 16,
+        "codec": "pcm_s16le",
+        "bitrate_kbps": 705.603,
+        "peak_amplitude_db": 0.0,
+        "rms_level_db": -22.8,
+        "estimated_snr_db": 20.543865999999998,
+        "dynamic_range_db": 43.343866,
+        "silence_ratio": 0.27760223333333334,
+        "clipping_ratio": 0.3333333333333333
+      },
+      "audio_quality_score": 75.0,
+      "transcriptions": [
+        {
+          "service": "openai_whisper_1",
+          "text": "The history of coffee is surprisingly complex and spans several centuries across multiple continents. Originally discovered in Ethiopia, the coffee plant made its way through Yemen and into the broader Middle East before eventually reaching Europe in the 17th century. Early European reactions to coffee were mixed. Some religious authorities initially condemned it as a Muslim drink, while others embraced its ability to keep people alert during long working hours. Coffee houses quickly became centres of intellectual discourse, earning them the nickname Penny Universities because anyone could join a conversation for the price of a cup. The Dutch were among the first Europeans to cultivate coffee outside of Arabia, establishing plantations in their colonial territories. This broke the Arabian monopoly on coffee production and eventually led to the global industry we know today. Brazil now produces roughly one third of the world's coffee supply, followed by Vietnam and Colombia. Modern coffee culture has evolved significantly from its origins. Speciality coffee roasters focus on single-origin beans, careful roasting profiles and precise brewing methods. Terms like pour-over, cold brew and third wave have entered common vocabulary. Meanwhile, instant coffee remains popular in many countries for its convenience. The science behind coffee extraction involves balancing temperature, grind size, water quality and contact time. Too fine a grind leads to over-extraction and bitterness, while too coarse results in weak sour flavours. Water temperature between 90 and 96 degrees Celsius is generally considered optimal. Caffeine content varies widely depending on brewing method and bean variety. A typical espresso shot contains less total caffeine than a large drip coffee, despite tasting much stronger. Robusta beans contain nearly twice the caffeine of Arabica, but are considered inferior in flavour. Whether enjoyed as a morning ritual or an afternoon pick-me-up, coffee remains one of the most widely consumed beverages on earth, second only to water and tea.",
+          "wer": 0.05396825396825397,
+          "cer": 0.016998542982030112,
+          "processing_time_seconds": 19.032342195510864,
+          "run_date": "2025-12-23"
+        }
+      ]
+    },
+    {
+      "sample_id": 11,
+      "filename": "samples/11.wav",
+      "microphone": {
+        "manufacturer": "Yealink",
+        "model": "BH72",
+        "type": "Wireless Headset",
+        "category": "headset",
+        "subcategory": "wireless"
+      },
+      "audio_metrics": {
+        "duration_seconds": 116.903492,
+        "sample_rate": 44100,
+        "channels": 1,
+        "bit_depth": 16,
+        "codec": "pcm_s16le",
+        "bitrate_kbps": 705.603,
+        "peak_amplitude_db": -2.9,
+        "rms_level_db": -23.8,
+        "estimated_snr_db": 37.165989999999994,
+        "dynamic_range_db": 58.06599,
+        "silence_ratio": 0,
+        "clipping_ratio": 0
+      },
+      "audio_quality_score": 85.0,
+      "transcriptions": [
+        {
+          "service": "openai_whisper_1",
+          "text": "Theory of coffee is surprisingly complex and spans several centuries across multiple continents. Originally discovered in Ethiopia, the coffee plant made its way through Yemen and into the broader Middle East before eventually reaching Europe in the 17th century. Early European reactions to coffee were mixed. Some religious authorities initially condemned it as a Muslim drink while others embraced its ability to keep people alert during long working hours. Coffee houses quickly became centres of intellectual discourse, earning them the nickname penny universities because anyone could join a conversation for the price of a cup. The Dutch were among the first Europeans to cultivate coffee outside of Arabia, establishing plantations in their colonial territories. This broke the Arabian monopoly on coffee production and eventually led to the global industry we know today. Brazil now produces roughly one third of the world's coffee supply, followed by Vietnam and Colombia. Modern coffee culture has evolved significantly from its origins. Speciality coffee roasters focus on single-origin beans, careful roasting profiles and precise brewing methods. Terms like pour-over, cold brew and third wave have entered common vocabulary. Meanwhile, instant coffee remains popular in many countries for its convenience. The science behind coffee extraction involves balancing temperature, grind size, water quality and contact time. Too fine a grind leads to over-extraction and bitterness, while too coarse results in weak, sour flavours. Water temperature between 90 and 96 degrees Celsius is generally considered optimal. Caffeine content varies widely depending on brewing method and bean variety. A typical espresso shot contains less total caffeine than a large drip coffee, despite tasting much stronger. Robusta beans contain nearly twice the caffeine of Arabica but are considered inferior in flavour. Whether enjoyed as a morning ritual or an afternoon pick-me-up, coffee remains one of the most widely consumed beverages on earth, second only to water and tea.",
+          "wer": 0.06031746031746032,
+          "cer": 0.01942690626517727,
+          "processing_time_seconds": 19.35891079902649,
+          "run_date": "2025-12-23"
+        }
+      ]
+    },
+    {
+      "sample_id": 12,
+      "filename": "samples/12.wav",
+      "microphone": {
+        "manufacturer": "Yealink",
+        "model": "BH72",
+        "type": "Wireless Headset",
+        "category": "headset",
+        "subcategory": "wireless"
+      },
+      "audio_metrics": {
+        "duration_seconds": 113.104399,
+        "sample_rate": 44100,
+        "channels": 1,
+        "bit_depth": 16,
+        "codec": "pcm_s16le",
+        "bitrate_kbps": 705.603,
+        "peak_amplitude_db": -2.8,
+        "rms_level_db": -24.2,
+        "estimated_snr_db": 35.19109,
+        "dynamic_range_db": 56.59109,
+        "silence_ratio": 0.010148500000000027,
+        "clipping_ratio": 0
+      },
+      "audio_quality_score": 85.0,
+      "transcriptions": [
+        {
+          "service": "openai_whisper_1",
+          "text": "The history of coffee is surprisingly complex and spans several centuries across multiple continents. Originally discovered in Ethiopia, the coffee plant made its way through Yemen and into the broader Middle East before eventually reaching Europe in the 17th century. Early European reactions to coffee were mixed, some religious authorities initially condemned it as a Muslim drink while others embraced its ability to keep people alert during long working hours. Coffee houses quickly became centres of intellectual discourse, earning them the nickname Penny Universities because anyone could join a conversation for the price of a cup. The Dutch were among the first Europeans to cultivate coffee outside of Arabia, establishing plantations in their colonial territories. This broke the Arabian monopoly on coffee production and eventually led to the global industry we know today. Brazil now produces roughly one-third of the world's coffee supply, followed by Vietnam and Colombia. Modern coffee culture has evolved significantly from its origins, speciality coffee roasters focus on single-origin beans, careful roasting profiles and precise brewing methods. Terms like pour-over, cold brew and third wave have entered common vocabulary. Meanwhile, instant coffee remains popular in many countries for its convenience. The science behind coffee extraction involves balancing temperature, grind size, water quality and contact time. Too fine a grind leads to over-extraction and bitterness while too coarse results in weak sour flavours. Water temperature between 90 and 96 degrees Celsius is generally considered optimal. Caffeine content varies widely depending on brewing method and bean variety. A typical espresso shot contains less total caffeine than a large drip coffee, despite tasting much stronger. Robusta beans contain nearly twice the caffeine of Arabica but are considered inferior in flavour. Whether enjoyed as a morning ritual or an afternoon pick-me-up, coffee remains one of the most widely consumed beverages on earth, second only to water and tea.",
+          "wer": 0.06031746031746032,
+          "cer": 0.017484215638659543,
+          "processing_time_seconds": 18.602494955062866,
+          "run_date": "2025-12-23"
+        }
+      ]
+    },
+    {
+      "sample_id": 13,
+      "filename": "samples/13.wav",
+      "microphone": {
+        "manufacturer": "Audio-Technica",
+        "model": "ATR4750-USB",
+        "type": "Condenser Gooseneck",
+        "category": "desktop",
+        "subcategory": "gooseneck"
+      },
+      "audio_metrics": {
+        "duration_seconds": 115.027324,
+        "sample_rate": 44100,
+        "channels": 1,
+        "bit_depth": 16,
+        "codec": "pcm_s16le",
+        "bitrate_kbps": 705.603,
+        "peak_amplitude_db": -5.7,
+        "rms_level_db": -25.1,
+        "estimated_snr_db": 17.912735999999995,
+        "dynamic_range_db": 37.312735999999994,
+        "silence_ratio": 0.2831210666666667,
+        "clipping_ratio": 0
+      },
+      "audio_quality_score": 70.0,
+      "transcriptions": [
+        {
+          "service": "openai_whisper_1",
+          "text": "The history of coffee is surprisingly complex and spans several centuries across multiple continents. Originally discovered in Ethiopia, the coffee plant made its way through Yemen and into the broader Middle East before eventually reaching Europe in the 17th century. Early European reactions to coffee were mixed. Some religious authorities initially condemned it as a Muslim drink, while others embraced its ability to keep people alert during long working hours. Coffee houses quickly became centres of intellectual discourse, earning them the nickname penny universities because anyone could join a conversation for the price of a cup. The Dutch were among the first Europeans to cultivate coffee outside of Arabia, establishing plantations in their colonial territories. This broke the Arabian monopoly on coffee production and eventually led to the global industry we know today. Brazil now produces roughly one third of the world's coffee supply, followed by Vietnam and Colombia. Modern coffee culture has evolved significantly from its origins. Speciality coffee roasters focus on single-origin beans, careful roasting profiles and precise brewing methods. Terms like pour-over, cold brew and third wave have entered common vocabulary. Meanwhile, instant coffee remains popular in many countries for its convenience. The science behind coffee extraction involves balancing temperature, grind size, water quality and contact time. Too fine a grind leads to over-extraction and bitterness, while too coarse results in weak, sour flavours. Water temperature between 90 and 96\u00b0C is generally considered optimal. Caffeine content varies widely depending on brewing method and bean variety. A typical espresso shot contains less total caffeine than a large drip coffee, despite tasting much stronger. Robust beans contain nearly twice the caffeine of Arabica but are considered inferior in flavour. Whether enjoyed as a morning ritual or an afternoon pick-me-up, coffee remains one of the most widely consumed beverages on earth, second only to water and tea.",
+          "wer": 0.06349206349206349,
+          "cer": 0.02476930548810102,
+          "processing_time_seconds": 20.3212411403656,
+          "run_date": "2025-12-23"
+        }
+      ]
+    },
+    {
+      "sample_id": 14,
+      "filename": "samples/14.wav",
+      "microphone": {
+        "manufacturer": "OnePlus",
+        "model": "Nord 3 5G",
+        "type": "Smartphone built-in",
+        "category": "mobile",
+        "subcategory": "smartphone"
+      },
+      "audio_metrics": {
+        "duration_seconds": 112.84,
+        "sample_rate": 44100,
+        "channels": 2,
+        "bit_depth": 16,
+        "codec": "pcm_s16le",
+        "bitrate_kbps": 1411.211,
+        "peak_amplitude_db": -0.8,
+        "rms_level_db": -13.7,
+        "estimated_snr_db": 35.70583500000001,
+        "dynamic_range_db": 48.605835000000006,
+        "silence_ratio": 0.17656941666666662,
+        "clipping_ratio": 0.06666666666666665
+      },
+      "audio_quality_score": 89.0,
+      "transcriptions": [
+        {
+          "service": "openai_whisper_1",
+          "text": "The history of coffee is surprisingly complex and spans several centuries across multiple continents. Originally discovered in Ethiopia, the coffee plant made its way through Yemen and into the broader Middle East before eventually reaching Europe in the 17th century. Early European reactions to coffee were mixed. Some religious authorities initially condemned it as a Muslim drink, while others embraced its ability to keep people alert during long working hours. Coffee houses quickly became centers of intellectual discourse, earning them the nickname Henny Universities because anyone could join a conversation for the price of a cup. The Dutch were among the first Europeans to cultivate coffee outside of Arabia, establishing plantations in their colonial territories. This broke the Arabian monopoly on coffee production and eventually led to the global industry we know today. Brazil now produces roughly one-third of the world's coffee supply, followed by Vietnam and Colombia. Modern coffee culture has evolved significantly from its origins. Specialty coffee roasters focus on single-origin beans, careful roasting profiles, and precise brewing methods. Terms like pour-over, cold brew, and third wave have entered common vocabulary. Meanwhile, instant coffee remains popular in many countries for its convenience. The science behind coffee extraction involves balancing temperature, grind size, water quality, and contact time. Too fine a grind leads to over-extraction and bitterness, while too coarse results in weak sour flavors. Water temperature between 90 and 96 degrees Celsius is generally considered optimal. Caffeine content varies widely depending on brewing method and bean variety. A typical espresso shot contains less total caffeine than an already-dripped coffee, despite tasting much stronger. Robusta beans contain nearly twice the caffeine of Arabica, but are considered inferior in flavor. Whether enjoyed as a morning ritual or an afternoon pick-me-up, coffee remains one of the most widely consumed beverages on earth, second only to water and tea.",
+          "wer": 0.06031746031746032,
+          "cer": 0.020398251578436135,
+          "processing_time_seconds": 32.82964110374451,
+          "run_date": "2025-12-23"
+        }
+      ]
+    },
+    {
+      "sample_id": 15,
+      "filename": "samples/15.wav",
+      "microphone": {
+        "manufacturer": "OnePlus",
+        "model": "Nord 3 5G",
+        "type": "Smartphone built-in",
+        "category": "mobile",
+        "subcategory": "smartphone"
+      },
+      "audio_metrics": {
+        "duration_seconds": 116.24,
+        "sample_rate": 44100,
+        "channels": 2,
+        "bit_depth": 16,
+        "codec": "pcm_s16le",
+        "bitrate_kbps": 1411.211,
+        "peak_amplitude_db": -0.9,
+        "rms_level_db": -21.3,
+        "estimated_snr_db": 24.845223999999998,
+        "dynamic_range_db": 45.245224,
+        "silence_ratio": 0.23091293333333335,
+        "clipping_ratio": 0.033333333333333326
+      },
+      "audio_quality_score": 79.5,
+      "transcriptions": [
+        {
+          "service": "openai_whisper_1",
+          "text": "The history of coffee is surprisingly complex and spans several centuries across multiple continents. Originally discovered in Ethiopia, the coffee plant made its way through Yemen and into the broader Middle East before eventually reaching Europe in the 17th century. Early European reactions to coffee were mixed. Some religious authorities initially condemned it as a Muslim drink, while others embraced its ability to keep people alert during long working hours. Coffee houses quickly became centres of intellectual discourse, earning them the nickname penny universities because anyone could join a conversation for the price of a cup. The Dutch were among the first Europeans to cultivate coffee outside of Arabia, establishing plantations in their colonial territories. This broke the Arabian monopoly on coffee production and eventually led to the global industry we know today. Brazil now produces roughly one third of the world's coffee supply, followed by Vietnam and Colombia. Modern coffee culture has evolved significantly from its origins. Speciality coffee roasters focus on single origin beans, careful roasting profiles and precise brewing methods. Terms like pour over, cold brew and third wave have entered common vocabulary. Meanwhile, instant coffee remains popular in many countries for its convenience. The science behind coffee extraction involves balancing temperature, grind size, water quality and contact time. Too fine a grind leads to over-extraction and bitterness, while too coarse results in weak sour flavours. Water temperature between 90 and 96 degrees Celsius is generally considered optimal. Caffeine content varies widely depending on brewing method and bean variety. A typical espresso shot contains less total caffeine than a large drip coffee, despite tasting much stronger. Robusta beans contain nearly twice the caffeine of Arabica, but are considered inferior in flavour. Whether enjoyed as a morning ritual or an afternoon pick-me-up, coffee remains one of the most widely consumed beverages on earth, second only to water and tea.",
+          "wer": 0.04126984126984127,
+          "cer": 0.016027197668771247,
+          "processing_time_seconds": 33.30964803695679,
+          "run_date": "2025-12-23"
+        }
+      ]
+    }
+  ]
+}

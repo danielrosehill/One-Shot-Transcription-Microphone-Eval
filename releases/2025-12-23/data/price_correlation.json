@@ -1,0 +1,87 @@
+{
+  "pearson_r": 0.540273288076398,
+  "pearson_p": 0.08620537456158463,
+  "spearman_rho": 0.5377287261556831,
+  "spearman_p": 0.08798743473756737,
+  "regression_slope": 0.00589138838543579,
+  "regression_intercept": 5.058689938891794,
+  "samples": [
+    {
+      "sample_id": 1,
+      "name": "UGreen CM564",
+      "price": 18,
+      "wer": 4.444444444444445,
+      "category": "desktop"
+    },
+    {
+      "sample_id": 2,
+      "name": "Samson Q2U",
+      "price": 70,
+      "wer": 5.396825396825397,
+      "category": "desktop"
+    },
+    {
+      "sample_id": 3,
+      "name": "Logitech H390",
+      "price": 30,
+      "wer": 5.714285714285714,
+      "category": "headset"
+    },
+    {
+      "sample_id": 6,
+      "name": "Audio-Technica ATR4697",
+      "price": 45,
+      "wer": 5.396825396825397,
+      "category": "desktop"
+    },
+    {
+      "sample_id": 7,
+      "name": "Audio-Technica ATR4697",
+      "price": 45,
+      "wer": 4.761904761904762,
+      "category": "desktop"
+    },
+    {
+      "sample_id": 8,
+      "name": "Jabra Speak 510",
+      "price": 110,
+      "wer": 5.396825396825397,
+      "category": "desktop"
+    },
+    {
+      "sample_id": 9,
+      "name": "Logitech C925e",
+      "price": 75,
+      "wer": 5.396825396825397,
+      "category": "desktop"
+    },
+    {
+      "sample_id": 10,
+      "name": "Maono Elf",
+      "price": 25,
+      "wer": 5.396825396825397,
+      "category": "lavalier"
+    },
+    {
+      "sample_id": 11,
+      "name": "Yealink BH72",
+      "price": 160,
+      "wer": 6.031746031746032,
+      "category": "headset"
+    },
+    {
+      "sample_id": 12,
+      "name": "Yealink BH72",
+      "price": 160,
+      "wer": 6.031746031746032,
+      "category": "headset"
+    },
+    {
+      "sample_id": 13,
+      "name": "Audio-Technica ATR4750-USB",
+      "price": 55,
+      "wer": 6.349206349206349,
+      "category": "desktop"
+    }
+  ]
+}

@@ -15,10 +15,15 @@ import tempfile
 from dataclasses import dataclass, asdict
 from pathlib import Path
 from typing import Optional
+from datetime import datetime
 import requests
 import wave
 import struct
 import math
+
+# Load .env file if present
+from dotenv import load_dotenv
+load_dotenv()
 
 # For WER calculation
 from jiwer import wer, cer
@@ -59,6 +64,7 @@ class TranscriptionResult:
     wer: float
     cer: float
     processing_time_seconds: Optional[float] = None
+    run_date: Optional[str] = None
 
 
 @dataclass
@@ -350,21 +356,27 @@ def evaluate_sample(sample: dict, reference_text: str) -> SampleEvaluation:
     transcriptions = []
     normalized_reference = normalize_text(reference_text)
 
-    # Local Whisper transcription
-    print("  Transcribing with local Whisper...")
-    local_text, local_time = transcribe_with_local_whisper(filepath)
-    if local_text:
-        normalized_local = normalize_text(local_text)
-        local_wer = wer(normalized_reference, normalized_local)
-        local_cer = cer(normalized_reference, normalized_local)
-        transcriptions.append(TranscriptionResult(
-            service="local_whisper_large_v3_turbo",
-            text=local_text,
-            wer=local_wer,
-            cer=local_cer,
-            processing_time_seconds=local_time
-        ))
-        print(f"    WER: {local_wer:.2%}, CER: {local_cer:.2%}")
+    run_date = datetime.now().strftime("%Y-%m-%d")
+
+    # Local Whisper transcription (optional - may not be available)
+    try:
+        print("  Transcribing with local Whisper...")
+        local_text, local_time = transcribe_with_local_whisper(filepath)
+        if local_text:
+            normalized_local = normalize_text(local_text)
+            local_wer = wer(normalized_reference, normalized_local)
+            local_cer = cer(normalized_reference, normalized_local)
+            transcriptions.append(TranscriptionResult(
+                service="local_whisper_large_v3_turbo",
+                text=local_text,
+                wer=local_wer,
+                cer=local_cer,
+                processing_time_seconds=local_time,
+                run_date=run_date
+            ))
+            print(f"    WER: {local_wer:.2%}, CER: {local_cer:.2%}")
+    except Exception as e:
+        print(f"  Local Whisper unavailable: {e}")
 
     # OpenAI Whisper transcription
     if OPENAI_API_KEY:
@@ -379,7 +391,8 @@ def evaluate_sample(sample: dict, reference_text: str) -> SampleEvaluation:
                 text=openai_text,
                 wer=openai_wer,
                 cer=openai_cer,
-                processing_time_seconds=openai_time
+                processing_time_seconds=openai_time,
+                run_date=run_date
             ))
             print(f"    WER: {openai_wer:.2%}, CER: {openai_cer:.2%}")
     else:
@@ -488,6 +501,12 @@ def generate_report(evaluations: list[SampleEvaluation], reference_text: str) ->
 
 
 def main():
+    import argparse
+    parser = argparse.ArgumentParser(description="Evaluate microphone audio samples for STT accuracy")
+    parser.add_argument("--samples", type=str, help="Comma-separated list of sample IDs to evaluate (e.g., '13,14,15')")
+    parser.add_argument("--merge", action="store_true", help="Merge results with existing evaluation_results.json")
+    args = parser.parse_args()
+
     print("=" * 60)
     print("Microphone Audio Quality & STT Accuracy Evaluation")
     print("=" * 60)
@@ -501,15 +520,52 @@ def main():
     print(f"\nReference text: {len(reference_text.split())} words")
     print(f"OpenAI API: {'Available' if OPENAI_API_KEY else 'Not configured'}")
 
+    # Filter samples if specified
+    samples_to_evaluate = metadata["samples"]
+    if args.samples:
+        sample_ids = [int(s.strip()) for s in args.samples.split(",")]
+        samples_to_evaluate = [s for s in metadata["samples"] if s["id"] in sample_ids]
+        print(f"Evaluating samples: {sample_ids}")
+
+    # Load existing results if merging
+    existing_detailed_results = []
+    if args.merge and RESULTS_FILE.exists():
+        with open(RESULTS_FILE, "r") as f:
+            existing_report = json.load(f)
+            existing_detailed_results = existing_report.get("detailed_results", [])
+            # Remove samples we're about to re-evaluate
+            if args.samples:
+                sample_ids = [int(s.strip()) for s in args.samples.split(",")]
+                existing_detailed_results = [r for r in existing_detailed_results if r["sample_id"] not in sample_ids]
+
     # Evaluate each sample
     evaluations = []
-    for sample in metadata["samples"]:
+    for sample in samples_to_evaluate:
         filepath = BASE_DIR / sample["filename"]
         if filepath.exists():
             eval_result = evaluate_sample(sample, reference_text)
             evaluations.append(eval_result)
         else:
             print(f"\nSkipping sample {sample['id']}: File not found - {sample['filename']}")
+
+    # Convert existing results to SampleEvaluation objects for merging
+    if args.merge and existing_detailed_results:
+        for result in existing_detailed_results:
+            metrics = AudioMetrics(**result["audio_metrics"])
+            transcriptions = [
+                TranscriptionResult(**t) for t in result["transcriptions"]
+            ]
+            existing_eval = SampleEvaluation(
+                sample_id=result["sample_id"],
+                filename=result["filename"],
+                microphone=result["microphone"],
+                audio_metrics=metrics,
+                transcriptions=transcriptions,
+                audio_quality_score=result["audio_quality_score"]
+            )
+            evaluations.append(existing_eval)
+        # Sort by sample_id
+        evaluations.sort(key=lambda e: e.sample_id)
 
     # Generate report
     print("\n" + "=" * 60)

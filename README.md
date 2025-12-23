@@ -1,5 +1,7 @@
 # Microphone Audio Samples for STT Evaluation
 
+![alt text](device-images/composites/eval1-231225/microphones-ranked-by-wer.png)
+
 A benchmark comparing how different microphones affect speech-to-text (STT) accuracy. All samples use the same ~2-minute reference text about coffee history, recorded in a consistent home office environment.
 
 ## Purpose
